@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
   <img src="./src/assets/logo.svg" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>European Population Monitor</b></h3>
+  <h3><b>World Population Tracker</b></h3>
 
 </div>
 
