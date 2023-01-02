@@ -1,8 +1,8 @@
 import React from 'react';
 import CountriesContainer from '../components/countries/CountriesContainer';
 
-const Countries = () => (
+const Cities = () => (
   <CountriesContainer />
 );
 
-export default Countries;
+export default Cities;
