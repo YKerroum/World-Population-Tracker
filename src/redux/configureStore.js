@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import population from './countries/homeSlice';
+import continentsPopulation from './continents/homeSlice';
+import countryPopulation from './countries/countriesSlice';
 
 const store = configureStore({
   reducer: {
-    population,
+    continentsPopulation,
+    countryPopulation,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });

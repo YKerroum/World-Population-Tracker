@@ -7,7 +7,7 @@ import './App.css';
 import { useDispatch } from 'react-redux';
 import Cities from './pages/Cities';
 import Countries from './pages/Countries';
-import { getPopulation } from './redux/countries/homeSlice';
+import { getPopulation } from './redux/continents/homeSlice';
 
 function App() {
   const dispatch = useDispatch();
