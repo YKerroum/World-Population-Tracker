@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:idCity" element={<Countries />} />
+        <Route path="/:continentName" element={<Countries />} />
       </Routes>
     </div>
   );
