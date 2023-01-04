@@ -1,5 +1,0 @@
-https://population.un.org/dataportalapi/api/v1/data/indicators/49/locations/900?startYear=2023&endYear=2023&variants=4&sexes=3&pagingInHeader=false&format=json   => world population 2022
-
-https://population.un.org/dataportalapi/api/v1/data/indicators/49/locations/909,908,935,904,903,905?startYear=2023&endYear=2023&variants=4&sexes=3&pagingInHeader=false&format=json
-
-https://population.un.org/dataportalapi/api/v1/locationsWithAggregates?pageNumber=1&pageSize=1000&format=json

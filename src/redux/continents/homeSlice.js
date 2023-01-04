@@ -19,11 +19,14 @@ export const getPopulation = createAsyncThunk('continentsPopulation/getPopulatio
 
 const continentSlice = createSlice({
   name: 'continentsPopulation',
-  initialState: { continents: [], loading: false, refresh: true },
+  initialState: {
+    world: [], continents: [], loading: false, refresh: true,
+  },
   extraReducers: {
     [getPopulation.pending]: (state) => ({ ...state, loading: true }),
     [getPopulation.fulfilled]: (state, action) => ({
       ...state,
+      world: action.payload.splice(0, 1),
       continents: action.payload,
       loading: false,
     }),
