@@ -21,7 +21,7 @@ function NavbarSpace(props) {
     <Navbar expand="sd" variant="dark" className={styles.navbarStyle}>
       <Container fluid className="justify-content-between">
         <IconContext.Provider value={{ color: 'white', size: '1.5em' }}>
-          <NavLink to="/" className={tar === 'country' ? styles.icons : styles.hideIcons}>
+          <NavLink to="/" className={tar === 'country' ? 'visible' : 'invisible'}>
             <MdOutlineArrowBackIosNew />
           </NavLink>
           <Navbar.Text>

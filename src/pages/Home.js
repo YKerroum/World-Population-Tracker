@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import Spinner from 'react-bootstrap/Spinner';
 import HomeCards from '../components/home/homeCards';
 import NavbarSpace from '../components/NavbarSpace';
 
 const Home = () => {
-  const { continents, world } = useSelector((state) => state.continentsPopulation);
+  const { continents, world, loading } = useSelector((state) => state.continentsPopulation);
   const [dataShown, setDataShown] = useState(undefined);
   const handleFilter = (target) => {
     const filteredData = continents.filter((continent) => continent
@@ -17,7 +18,7 @@ const Home = () => {
     setDataShown(continents);
   }, [continents]);
 
-  return (
+  return (!loading) ? (
     <>
       <NavbarSpace handleSearch={handleFilter} tar="continent" />
       {(dataShown && world.length) && (
@@ -31,13 +32,19 @@ const Home = () => {
           </div>
         </>
         )}
-        {/* <Footer /> */}
       </>
       )}
-
-      {/* (!dataShown) && <LoadingScreen /> */}
-
     </>
+  ) : (
+    <div
+      className="homeCards"
+      style={{
+        height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
+      }}
+    >
+      <h1>Loading ...</h1>
+      <Spinner animation="grow" variant="info" />
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import Spinner from 'react-bootstrap/Spinner';
 import { getCountryPopulation } from '../redux/countries/countriesSlice';
 import CountryCards from '../components/countries/CountryCards';
 import NavbarSpace from '../components/NavbarSpace';
@@ -14,7 +15,7 @@ const Countries = () => {
     dispatch(getCountryPopulation(continentName));
   }, [dispatch, continentName]);
 
-  const { countries } = useSelector((state) => state.countryPopulation);
+  const { countries, loading } = useSelector((state) => state.countryPopulation);
   const continent = useSelector((state) => state
     .continentsPopulation
     .continents
@@ -32,7 +33,7 @@ const Countries = () => {
     setDataShown(countries);
   }, [countries]);
 
-  return (
+  return (!loading) ? (
     <>
       <NavbarSpace handleSearch={handleFilter} tar="country" />
       {(dataShown && continent) && (
@@ -45,13 +46,20 @@ const Countries = () => {
           </div>
         </>
         )}
-        {/* <Footer /> */}
       </>
       )}
-
-      {/* (!dataShown) && <LoadingScreen /> */}
     </>
 
+  ) : (
+    <div
+      className="countriesCards"
+      style={{
+        height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
+      }}
+    >
+      <h1>Loading ...</h1>
+      <Spinner animation="grow" variant="info" />
+    </div>
   );
 };
 
