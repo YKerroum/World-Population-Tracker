@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCountryPopulation } from '../redux/countries/countriesSlice';
-import CountryCards from '../components/countries/countryCards';
+import CountryCards from '../components/countries/CountryCards';
 import NavbarSpace from '../components/NavbarSpace';
 
 const Countries = () => {
