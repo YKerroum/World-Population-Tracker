@@ -13,7 +13,7 @@ const CountryCards = ({ countries, continent }) => (
       <Col xs={12} className="p-0 m-0 w-100">
         <Card className={`d-flex flex-row rounded-0 text-white ${styles.mainCard}`}>
           <Col xs={6}>
-            <Card.Img src={continent.image} alt="continent image" />
+            <Card.Img src={continent.image} alt="continent image" style={{ width: '100%', maxHeight: '400px' }} />
           </Col>
           <Col xs={6} className="align-self-center">
             <Card.Body>
@@ -28,9 +28,12 @@ const CountryCards = ({ countries, continent }) => (
         </Card>
       </Col>
     </Row>
+    <Row className="p-0 m-0" style={{ backgroundColor: colors[0] }}>
+      <h6 className={`text-white ${styles.titles}`}>Stats by country</h6>
+    </Row>
     <div className="countriesCards">
       {countries.map((country, index) => (
-        <Card key={country.code} className={`rounded-0 text-white ${styles.cards}`} style={{ backgroundColor: colors[index % 2] }}>
+        <Card role="button" key={country.code} className={`rounded-0 text-white ${styles.cards}`} style={{ backgroundColor: colors[index % 2] }}>
           <Card.Body className="d-flex flex-row justify-content-between">
             <Card.Title className={styles.titles}>{country.name}</Card.Title>
             <Card.Text>

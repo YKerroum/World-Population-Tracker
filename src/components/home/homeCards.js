@@ -31,6 +31,9 @@ const HomeCards = ({ continents, world }) => {
             </Card>
           </Col>
         </Row>
+        <Row className="p-0 m-0" style={{ backgroundColor: colors[0] }}>
+          <h6 className={`text-white ${styles.titles}`}>Stats by continent</h6>
+        </Row>
         {continents.map((continent, index) => (
           <>
             {(index % 2 === 0) && (colors.reverse()
