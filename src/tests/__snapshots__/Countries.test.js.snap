@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries component should render correctly when loading is true 1`] = `
+<div
+  className="countriesCards"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "height": "100vh",
+      "justifyContent": "center",
+    }
+  }
+>
+  <h1>
+    Loading ...
+  </h1>
+  <div
+    className="spinner-grow text-info"
+  />
+</div>
+`;
