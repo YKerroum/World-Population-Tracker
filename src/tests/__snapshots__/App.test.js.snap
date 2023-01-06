@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Application renders Link 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbarStyle navbar navbar-expand-sd navbar-dark"
+  >
+    <div
+      className="justify-content-between container-fluid"
+    >
+      <a
+        aria-current="page"
+        className="invisible active"
+        href="/"
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1.5em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1.5em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M17.77 3.77L16 2 6 12l10 10 1.77-1.77L9.54 12z"
+          />
+        </svg>
+      </a>
+      <span
+        className="navbar-text"
+      >
+        Continents
+         
+        Population List
+      </span>
+      <span
+        className="navbar-text"
+      >
+        <svg
+          fill="currentColor"
+          height="1.5em"
+          onClick={[Function]}
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1.5em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </span>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Application renders correctly 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbarStyle navbar navbar-expand-sd navbar-dark"
+  >
+    <div
+      className="justify-content-between container-fluid"
+    >
+      <a
+        aria-current="page"
+        className="invisible active"
+        href="/"
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1.5em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1.5em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M17.77 3.77L16 2 6 12l10 10 1.77-1.77L9.54 12z"
+          />
+        </svg>
+      </a>
+      <span
+        className="navbar-text"
+      >
+        Continents
+         
+        Population List
+      </span>
+      <span
+        className="navbar-text"
+      >
+        <svg
+          fill="currentColor"
+          height="1.5em"
+          onClick={[Function]}
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1.5em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </span>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`renders Afric stats Link 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbarStyle navbar navbar-expand-sd navbar-dark"
+  >
+    <div
+      className="justify-content-between container-fluid"
+    >
+      <a
+        aria-current="page"
+        className="invisible active"
+        href="/"
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1.5em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1.5em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M17.77 3.77L16 2 6 12l10 10 1.77-1.77L9.54 12z"
+          />
+        </svg>
+      </a>
+      <span
+        className="navbar-text"
+      >
+        Continents
+         
+        Population List
+      </span>
+      <span
+        className="navbar-text"
+      >
+        <svg
+          fill="currentColor"
+          height="1.5em"
+          onClick={[Function]}
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1.5em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </span>
+    </div>
+  </nav>
+</div>
+`;

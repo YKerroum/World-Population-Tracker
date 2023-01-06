@@ -1,0 +1,16 @@
+.mainCard {
+  background-color: #5688e4 !important;
+}
+
+.titles {
+  text-transform: uppercase;
+}
+
+.cards:hover {
+  background:
+    linear-gradient(
+      45deg,
+      rgba(29, 236, 197, 0.5),
+      rgba(91, 14, 214, 0.5) 100%
+    );
+}
